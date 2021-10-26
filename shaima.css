@@ -1,59 +1,19 @@
-// Full tutorial coming soon!
 
-.card {
-  --card-gradient: rgba(0, 0, 0, 0.8);
-  --card-gradient: #5e9ad9, #e271ad;
-  // --card-gradient: tomato, orange;
-  --card-blend-mode: overlay;
-  // --card-blend-mode: multiply;
-
-  
-  
-
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
-  padding-bottom: 1rem;
-  
-  background-image: linear-gradient(
-    var(--card-gradient),
-    white max(.5rem, 50vh)
-  );
-  overflow: hidden;
 
   img {
     border-radius: 0.5rem 0.5rem 0 0;
     width: 100%;
-    object-fit: cover;
-    // height: max(10rem, 25vh);
-    max-height: max(10rem, 30vh);
-    aspect-ratio: 4/3;
-    mix-blend-mode: var(--card-blend-mode);
-    // filter: grayscale(100);
-
-    ~ * {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-  }
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-
-  &:hover,
-  &:focus-within {
-    --card-gradient: #24a9d5 max(8.5rem, 20vh);
-  }
-}
+    object-fit: cover;}
 
 /* Additional demo display styles */
 * {
   box-sizing: border-box;
 }
-.container{ width: ;}
 .card {
-    width:auto
+    width:500px;
+    color:#616161;
+    
+    
 }
 body {
   display: grid;
@@ -63,22 +23,19 @@ body {
   margin: 0;
   padding: 1rem;
   line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  color: #444;
-  background-color: #e1faf1;
+  font-family:'IBM Plex Sans', sans-serif;
+  background-color: white;
 }
 
 .card h3 {
-  margin-top: 1rem;
+  margin-top: 0px;
   font-size: 1.25rem;
 }
 
-.card a {
-  color: inherit;
-}
+
 .card span {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    
   }
 
 .card-wrapper {
@@ -98,16 +55,66 @@ body {
 .card__container {
     width: 200px;
     height: 100px;
-    text-align: center;
+    
+    
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    grid-row-gap: 300px;
+    grid-template-columns: auto auto;
+    padding: 200px;
+    grid-column-gap: 300px;
+    grid-row-gap:200px ;
+  
 }
-img{
+
+img.rounded-corners {
     left: 100px;
+    top: 50px;
+    width: 100px;
+    border-radius: 5px;
+    height: inherit;
+  }
+
+
+table.card_table {
+    
+    width: 3px;
+    height: 250px;
+    border-radius: 5px;
+    /*border-style: solid;*/
+}
+
+h3.card__header{
+    top:5px;
+    padding: 0px;
+    margin: 10px;
+    color: #d57a5b;
+    text-align: left;
+    float: left;
+    width: 100px;
+    height: inherit;
+    word-wrap: break-word;
+    font-size: 20px;
+    font-weight: bold;
+}
+p {
+    display: inline;
+    padding: 0px;
+    margin: 5px;
+    bottom: 0px;
+    left: 10px;
+    float: left;
+    text-align: left;
+    width: 200px;
+    height: inherit;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.card_span{
+    /*background-color: black;*/
+    width: 300px;
+    word-wrap: break-word;
 }
 
