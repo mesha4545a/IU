@@ -1,0 +1,2 @@
+- Edited style.css file in css folder and rename it style1.css --> ( css\style1.css)
+- i added imge named (testi-style3-2.jpg) in folder __testimonial__ in __image__ folder --> (images\testimonial)
